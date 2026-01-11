@@ -339,6 +339,12 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 800px) {
+    .lyrics-container {
+        width: 95%;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bemidji! The Rock Opera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Cover Art -->
+        <header class="header">
+            <div class="cover-art">
+                <img src="bemidji-album-cover.png" alt="Bemidji! The Rock Opera Cover Art" id="coverArt">
+            </div>
+            <h1 class="main-title">Bemidji! The Rock Opera</h1>
+            <p class="subtitle">A Musical Journey Through the Northwoods</p>
+        </header>
+
+        <!-- Progress Indicator -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-text">
+                <span id="currentSongNumber">1</span> of <span id="totalSongs">48</span>
+            </div>
+        </div>
+
+        <!-- Audio Player -->
+        <section class="player-section">
+            <div class="now-playing">
+                <h2 id="currentSongTitle">Song 1: Opening Overture</h2>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="player-controls">
+                <button id="prevBtn" class="control-btn">⏮ Previous</button>
+                <button id="playPauseBtn" class="control-btn">▶ Play / Pause</button>
+                <button id="nextBtn" class="control-btn">Next ⏭</button>
+            </div>
+        </section>
+
+        <!-- Lyrics/Script Display -->
+        <section class="lyrics-section">
+            <h3>Script & Lyrics</h3>
+            <div class="lyrics-container" id="lyricsDisplay">
+                <p class="lyrics-placeholder">Lyrics for the current song will appear here...</p>
+            </div>
+        </section>
+
+        <!-- Track Listing -->
+        <section class="tracklist-section">
+            <h3>Track Listing</h3>
+            <div class="tracklist" id="trackList">
+                <!-- Tracks will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h3>About the Opera</h3>
+            <div class="about-content">
+                <h4>The Story</h4>
+                <p>
+                    Set against the dramatic backdrop of Bemidji, Minnesota, this rock opera weaves together
+                    the tales of legendary characters, mythical creatures, and the spirit of the Northwoods.
+                    Through 48 powerful songs, we journey through seasons of change, personal transformation,
+                    and the eternal struggle between nature and civilization.
+                </p>
+                <p>
+                    From the shores of Lake Bemidji to the towering pines of the northern forests,
+                    this musical odyssey captures the essence of small-town America while exploring
+                    universal themes of love, loss, redemption, and the search for meaning.
+                </p>
+
+                <h4>Creative Background</h4>
+                <p>
+                    "Bemidji! The Rock Opera" represents years of creative development, blending classic
+                    rock influences with theatrical storytelling. The work draws inspiration from the
+                    region's rich folklore, including tales of Paul Bunyan, Babe the Blue Ox, and the
+                    Indigenous legends that have shaped the cultural landscape of northern Minnesota.
+                </p>
+                <p>
+                    Each song serves as a chapter in this sprawling narrative, with musical styles
+                    ranging from folk ballads to hard-driving rock anthems, acoustic interludes to
+                    full-ensemble finales. The opera is designed to be experienced as a complete journey,
+                    though individual songs stand on their own as powerful musical statements.
+                </p>
+
+                <h4>Production Notes</h4>
+                <p>
+                    This production features original music and lyrics, performed by a talented ensemble
+                    of musicians and vocalists. The recording captures the raw energy and emotional depth
+                    of live performance while maintaining studio-quality production values.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Bemidji! The Rock Opera. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark gradient background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a0000;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4cf57;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGradient)"/>
+
+  <!-- Decorative border -->
+  <rect x="30" y="30" width="740" height="740"
+        fill="none"
+        stroke="#d4af37"
+        stroke-width="4"
+        opacity="0.8"/>
+
+  <rect x="40" y="40" width="720" height="720"
+        fill="none"
+        stroke="#8b0000"
+        stroke-width="2"
+        opacity="0.6"/>
+
+  <!-- Pine tree silhouettes -->
+  <polygon points="150,650 180,550 210,650" fill="#1a1a1a" opacity="0.6"/>
+  <polygon points="200,680 240,550 280,680" fill="#1a1a1a" opacity="0.6"/>
+  <polygon points="520,680 560,550 600,680" fill="#1a1a1a" opacity="0.6"/>
+  <polygon points="590,650 620,550 650,650" fill="#1a1a1a" opacity="0.6"/>
+
+  <!-- Lake silhouette -->
+  <ellipse cx="400" cy="650" rx="300" ry="50" fill="#0a1a2a" opacity="0.7"/>
+
+  <!-- Title -->
+  <text x="400" y="280"
+        font-family="Impact, Arial Black, sans-serif"
+        font-size="80"
+        font-weight="bold"
+        fill="url(#textGradient)"
+        text-anchor="middle"
+        filter="url(#glow)"
+        letter-spacing="4">
+    BEMIDJI!
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="350"
+        font-family="Georgia, serif"
+        font-size="42"
+        font-style="italic"
+        fill="#cccccc"
+        text-anchor="middle"
+        letter-spacing="3">
+    The Rock Opera
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="200" y1="380" x2="600" y2="380"
+        stroke="#d4af37"
+        stroke-width="2"
+        opacity="0.8"/>
+
+  <!-- Additional text -->
+  <text x="400" y="450"
+        font-family="Georgia, serif"
+        font-size="24"
+        fill="#999999"
+        text-anchor="middle"
+        letter-spacing="2">
+    48 SONGS
+  </text>
+
+  <text x="400" y="490"
+        font-family="Georgia, serif"
+        font-size="20"
+        fill="#888888"
+        text-anchor="middle"
+        letter-spacing="2">
+    A MUSICAL JOURNEY
+  </text>
+
+  <text x="400" y="520"
+        font-family="Georgia, serif"
+        font-size="20"
+        fill="#888888"
+        text-anchor="middle"
+        letter-spacing="2">
+    THROUGH THE NORTHWOODS
+  </text>
+
+  <!-- Northern star decoration -->
+  <circle cx="400" cy="150" r="3" fill="#d4af37" filter="url(#glow)"/>
+  <line x1="400" y1="130" x2="400" y2="170" stroke="#d4af37" stroke-width="1" opacity="0.6"/>
+  <line x1="380" y1="150" x2="420" y2="150" stroke="#d4af37" stroke-width="1" opacity="0.6"/>
+  <line x1="385" y1="135" x2="415" y2="165" stroke="#d4af37" stroke-width="1" opacity="0.6"/>
+  <line x1="385" y1="165" x2="415" y2="135" stroke="#d4af37" stroke-width="1" opacity="0.6"/>
+</svg>
